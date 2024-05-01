@@ -3,7 +3,7 @@ name: Deploy React App
 on:
   push:
     branches:
-      - main
+      - public-page
 
 jobs:
   deploy:
@@ -14,7 +14,6 @@ jobs:
         run: npm install
       - name: Build and deploy
         run: |
-          npm run build
-          npm run deploy
+          npm start
         env:
           REACT_APP_ENV: production
