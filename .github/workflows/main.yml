@@ -1,4 +1,4 @@
-name: Deploy React App4
+name: Deploy React App5
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
-      -name: Auth Email
-      run: git config --global user.email "mdsamimakhter2001@gmail.com"
-      -name: Auth User
-      run: git config --global user.name "imdsamimakhter"
+      - name: Auth Email
+        run: git config --global user.email "mdsamimakhter2001@gmail.com"
+      - name: Auth User
+        run: git config --global user.name "imdsamimakhter"
       
       - name: Build and deploy
         run: |
