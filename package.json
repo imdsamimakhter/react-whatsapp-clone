@@ -1,5 +1,6 @@
 {
-  "name": "whatsapp-clone-yt",
+  "name": "react-whatsapp-clone",
+  "homepage": "https://imdsamimakhter.github.io/react-whatsapp-clone"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
