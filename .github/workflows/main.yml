@@ -12,10 +12,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
+      -name: Auth Email
+      run: git config --global user.email "mdsamimakhter2001@gmail.com"
+      -name: Auth User
+      run: git config --global user.name "imdsamimakhter"
+      
       - name: Build and deploy
         run: |
-          git config --global user.email "mdsamimakhter2001@gmail.com"
-          git config --global user.name "imdsamimakhter"
           npm install gh-pages --save-dev
           npm run build
           npm run deploy
